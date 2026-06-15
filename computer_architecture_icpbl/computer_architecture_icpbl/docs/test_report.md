@@ -35,14 +35,14 @@ Simulation Complete
 
 ### Figure 1. Acceleration phase (switches = 0x80)
 
-![Acceleration Phase](waveform_profile.png)
+![Acceleration Phase](waveform_profile1.png)
 
 Figure 1. Acceleration phase (switches = 0x80).
 After switches is set to 0x80, the CPU reads the target each loop iteration and increments `pwm_duty` and `led` by 1 per step. The PWM output pulse width visibly widens as `pwm_duty` increases from 0 toward the target value 0x80 (128).
 
 ### Figure 2. Target reached and hold phase
 
-![Hold Phase](waveform_profile1.png)
+![Hold Phase](waveform_profile.png)
 
 Figure 2. Target reached and hold phase.
 `pwm_duty` reaches 0x80 (128) and remains constant while `switches` stays at 0x80. Once `current_duty == switches`, neither the accelerate nor the decelerate branch is taken, and the duty cycle holds steady. The PWM pulse width remains fixed at approximately 50%.
