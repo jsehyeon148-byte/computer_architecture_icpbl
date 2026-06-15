@@ -45,7 +45,7 @@ After switches is set to 0x80, the CPU reads the target each loop iteration and 
 ![Hold Phase](waveform_profile.png)
 
 Figure 2. Target reached and hold phase.
-`pwm_duty` reaches 0x80 (128) and remains constant while `switches` stays at 0x80. Once `current_duty == switches`, neither the accelerate nor the decelerate branch is taken, and the duty cycle holds steady. The PWM pulse width remains fixed at approximately 50%.Once the target value is reached, pwm_duty no longer changes and the PWM duty cycle remains constant.
+`pwm_duty` reaches 0x80 (128) and remains constant while `switches` stays at 0x80. Once `current_duty == switches`, neither the accelerate nor the decelerate branch is taken, and the duty cycle holds steady. The PWM pulse width remains fixed at approximately 50% because pwm_duty no longer changes once the target value is reached.
 
 The waveform shows:
 - **Ramp-up region**: `led` and `pwm_duty` increase by 1 each control loop iteration while `current_duty < target`.
