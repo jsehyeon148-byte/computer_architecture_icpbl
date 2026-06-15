@@ -44,10 +44,6 @@ A 5-stage pipelined MIPS CPU that reads a target motor speed from switches via M
 make
 ```
 
-**Open waveform in GTKWave:**
-```bash
-gtkwave mips.vcd
-```
 
 Or using the Makefile target:
 ```bash
