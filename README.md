@@ -97,6 +97,6 @@ computer_architecture_icpbl/
 └── docs/
     ├── design_report.md    # Design decisions and architecture
     ├── test_report.md      # Simulation verification and edge cases
-    ├── waveform_profile.png    # GTKWave screenshot: acceleration phase
-    └── waveform_profile1.png   # GTKWave screenshot: hold phase
+    ├── waveform_profile.png    # GTKWave screenshot: hold phase
+    └── waveform_profile1.png    # GTKWave screenshot: acceleration phase
 ```
